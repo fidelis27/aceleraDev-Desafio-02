@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+body {
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 728px) {
+    .container {
+        width: 728px;
+    }
+}
+
+header.top {
+    display: flex;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container a {
+    height: 40px;
+}
+
+header .container a img {
+    height: 100%;
+}
+
+header .topbar-icon {
+    font-size: 1.6rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .stories-container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 16px;
+}
+
+main .stories-item {
+    display: flex;
+    width: 78px;
+    height: 78px;
+    margin: 0 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+main .stories-item span {
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    border: 2px solid white;
+    display: inline-block;
+    overflow: hidden;
+}
+
+main .new-storie {
+    background: linear-gradient(45deg, rgba(245, 160, 77, 1) 0%, rgba(160, 15, 139, 1) 100%);
+}
+
+main .stories-item img {
+    width: 100%;
+    height: 100%;
+}
+
+main section.feed {
+    padding: 16px;
+}
+
+main .post {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+main .post .post-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 0 5px;
+}
+
+main .post .user {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+main .post .user-thumb {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+}
+
+main .post .user-thumb img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+main .post .user-name {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main figure {
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+main .post .pictures img {
+    width: 100%;
+}
+
+main .post-controls {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 0;
+}
+
+main .post-control {
+    font-size: 2.4rem;
+    margin: 0 8px;
+}
+
+main .post-control:last-of-type {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+main .post-status {
+    display: flex;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+main .post-status .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .post-status .user-thumb {
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+
+main .post-status .user span {
+    font-size: 1.2rem;
+}
