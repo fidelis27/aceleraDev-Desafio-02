@@ -32,18 +32,23 @@ body {
     color: #000;
 }
 
-.container {
+.header__container, .main__container__stories, .main__container__post{
     width: 100%;
     margin: 0 auto;
+    
 }
 
-@media screen and (min-width: 728px) {
-    .container {
-        width: 728px;
+@media(min-width: 728px) {
+    .header__container,
+    .main__container__stories, 
+    .main__container__post{
+        
+        width:  728px;        
     }
+    
 }
 
-header.top {
+header.top{
     display: flex;
     box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -52,41 +57,38 @@ header.top {
     background-color: white;
     width: 100%;
     padding: 8px 16px;
+    justify-content: center;
 }
 
-header .container {
+.header__container
+    {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .container a {
+.header__container a {
     height: 40px;
 }
 
-header .container a img {
+.header__container a img {
     height: 100%;
 }
 
-header .topbar-icon {
+.header__container .topbar-icon {
     font-size: 1.6rem;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-main .stories-container {
+
+.main__container__stories .stories__container {
     display: flex;
     justify-content: start;
     width: 100%;
     padding: 16px;
 }
 
-main .stories-item {
+.main__container__stories  .stories__item {
     display: flex;
     width: 78px;
     height: 78px;
@@ -96,7 +98,7 @@ main .stories-item {
     border-radius: 100%;
 }
 
-main .stories-item span {
+.main__container__stories .stories__item span {
     width: 74px;
     height: 74px;
     border-radius: 100%;
@@ -105,20 +107,20 @@ main .stories-item span {
     overflow: hidden;
 }
 
-main .new-storie {
+.main__container__stories .new__storie {
     background: linear-gradient(45deg, rgba(245, 160, 77, 1) 0%, rgba(160, 15, 139, 1) 100%);
 }
 
-main .stories-item img {
+.main__container__stories .stories__item img {
     width: 100%;
     height: 100%;
 }
 
-main section.feed {
+.main__container__post section.feed {
     padding: 16px;
 }
 
-main .post {
+main .main__post{
     background-color: white;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -128,32 +130,32 @@ main .post {
     margin-bottom: 30px;
 }
 
-main .post .post-header {
+.main__post .post__header {
     display: flex;
     justify-content: space-between;
     padding: 8px;
     margin: 0 5px;
 }
 
-main .post .user {
+.main__post .user {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-main .post .user-thumb {
+.main__post .user__thumb {
     height: 40px;
     width: 40px;
     margin-right: 8px;
 }
 
-main .post .user-thumb img {
+.main__post .user__thumb img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
 
-main .post .user-name {
+.main__post .user__name {
     color: black;
     font-size: 1.2rem;
     font-weight: bold;
@@ -167,11 +169,11 @@ main figure {
     width: 100%;
 }
 
-main .post .pictures img {
+.main__post .pictures img {
     width: 100%;
 }
 
-main .post-controls {
+.main__post .post__controls {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -179,34 +181,34 @@ main .post-controls {
     padding: 4px 0;
 }
 
-main .post-control {
+.main__post .post__control {
     font-size: 2.4rem;
     margin: 0 8px;
 }
 
-main .post-control:last-of-type {
+.main__post .post__control:last-of-type {
     justify-self: flex-end;
     margin-left: auto;
 }
 
-main .post-status {
+.main__post .post__status  {
     display: flex;
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-main .post-status .user {
+.main__post .post__status  .user {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-main .post-status .user-thumb {
+.main__post .post__status  .user__thumb {
     height: 30px;
     width: 30px;
     margin-right: 8px;
 }
 
-main .post-status .user span {
+.main__post .post__status  .user span {
     font-size: 1.2rem;
 }
